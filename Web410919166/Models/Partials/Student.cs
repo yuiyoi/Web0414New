@@ -7,7 +7,7 @@ using System.Web;
 namespace Web410919166.Models
 {
     [MetadataType(typeof(StudentMetadata))]
-    public partial class Students
+    public partial class Student
     {
     }
 
@@ -18,7 +18,7 @@ namespace Web410919166.Models
 
         [Required(ErrorMessage = "請填寫姓名")]
         [Display(Name = "姓名")]
-        [StringLength(5,MinimumLength =2,ErrorMessage ="請輸入2~5個字")]
+        [StringLength(5, MinimumLength = 2, ErrorMessage = "請輸入2~5個字")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "請填寫學號")]
